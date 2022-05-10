@@ -1,0 +1,8 @@
+<div class="container">
+<h1>Task "<%= @task[:title] %>"</h1>
+
+<p>Details :<%= @task[:details] %></p>
+<p>Status : <%= @task[:completed] ? "Done!" : "Not done yet" %></p>
+
+<%= link_to "Edit this task", edit_task_path %>
+</div>
